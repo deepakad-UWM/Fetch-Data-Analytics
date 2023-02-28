@@ -1,0 +1,58 @@
+receipts
+	ID								- PK	
+	STORE_NAME	                    - 
+	PURCHASE_DATE	                - 
+	PURCHASE_TIME	                - 
+	DATE_SCANNED	                - 
+	TOTAL_SPENT	                    - 
+	REWARDS_RECEIPT_STATUS	        - 
+	USER_ID	                        - FK
+	USER_VIEWED	                    - 
+	PURCHASED_ITEM_COUNT	        - 
+	CREATE_DATE	                    - 
+	PENDING_DATE	                - 
+	MODIFY_DATE	                    - 
+	FLAGGED_DATE	                - 
+	PROCESSED_DATE	                - 
+	FINISHED_DATE	                - 
+	REJECTED_DATE	                - 
+	NEEDS_FETCH_REVIEW	            - 
+	DIGITAL_RECEIPT	                - 
+	DELETED	                        - 
+	NON_POINT_EARNING_RECEIPT       - 
+
+users
+	CREATED_DATE	     			-
+	BIRTH_DATE	                    -
+	GENDER	                        -
+	LAST_REWARDS_LOGIN	            -
+	STATE	                        -
+	SIGN_UP_PLATFORM	            -
+	SIGN_UP_SOURCE	                -
+	ID                              - PK
+	
+brands
+	ID								- PK
+	BARCODE	                        -
+	BRAND_CODE	                    -
+	CPG_ID	                        - consumer packaged goods unique id
+	CATEGORY	                    -
+	CATEGORY_CODE	                -
+	NAME	                        -
+	ROMANCE_TEXT	                -
+	RELATED_BRAND_IDS               -
+	
+receipt_items
+	REWARDS_RECEIPT_ID				- FK
+	ITEM_INDEX	                    -
+	REWARDS_RECEIPT_ITEM_ID	        - PK
+	DESCRIPTION	                    -
+	BARCODE	                        - 
+	BRAND_CODE	                    - Brand description
+	QUANTITY_PURCHASED	            -
+	TOTAL_FINAL_PRICE	            -
+	POINTS_EARNED	                -
+	REWARDS_GROUP	                -
+	ORIGINAL_RECEIPT_ITEM_TEXT	    -
+	MODIFY_DATE                     -
+
